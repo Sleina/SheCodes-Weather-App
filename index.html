@@ -14,13 +14,51 @@
 
 <body>
     <div class="Container">
-        <h1>Hosting</h1>
-        <a href="" class="btn btn-primary contact-btn">Contact me</a>
-        <form action="">
-            <input type="email" placeholder="Ender your email">
-            <input type="password" placeholder="Ender your password">
-            <input type="submit" value="Login">
-        </form>
+        <div class="weather-app">
+            <form class="search-form">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                            class="form-control shadow-sm" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                    </div>
+                </div>
+            </form>
+            <h1>Solothurn SO, Switzerland</h1>
+            <ul>
+                <li>
+                    Thursday 13:30
+                </li>
+                <li>
+                    Sunny
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+                        <img src="sun-emoji.jpg" height="100" alt="sunny" class="weather-icon float-left" />
+                        <div class="float-left">
+                            <span class="temperature">19</span><span class="units">°C | <a href="#">°F</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            Precipitation: 0%
+                        </li>
+                        <li>
+                            Humidity: 77%
+                        </li>
+                        <li>
+                            Wind: 8 km/h
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
