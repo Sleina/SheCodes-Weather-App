@@ -28,16 +28,14 @@
                     </div>
                 </div>
             </form>
-            <h1 id="city">
-                Solothurn SO, Switzerland
-            </h1>
-            <ul>
-                <li id="date"></li>
-                <li id="description"></li>
-                <li>
-                    Sunny
-                </li>
-            </ul>
+            <div class="overview">
+                <h1 id="city">
+                </h1>
+                <ul>
+                    <li id="date"></li>
+                    <li id="description"></li>
+                </ul>
+            </div>
             <div class="row">
                 <div class="col-6">
                     <div class="clearfix">
@@ -52,19 +50,12 @@
                 </div>
                 <div class="col-6">
                     <ul>
-                        <li>
-                            Precipitation: 0%
-                        </li>
-                        <li>
-                            Humidity: 77%
-                        </li>
-                        <li>
-                            Wind: 8 km/h
-                        </li>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> km/h</li>
                     </ul>
                 </div>
-                <div class="weather-forecast" id="forecast"></div>
             </div>
+            <div class="weather-forecast" id="forecast"></div>
         </div>
     </div>
     <script src="script.js"></script>
