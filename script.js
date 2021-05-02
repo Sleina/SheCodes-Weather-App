@@ -22,6 +22,14 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 //Display Weather Forecast
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -174,8 +182,8 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+/* let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation); */
 
-searchCity("New York");
+searchCity("Solothurn");
 displayforecast();
