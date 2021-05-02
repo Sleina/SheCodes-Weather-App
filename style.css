@@ -1,5 +1,5 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h1 {
@@ -20,7 +20,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: rgb(230, 179, 13);
+  color: #e2bf25;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -37,7 +37,7 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid #e2bf25;
   border-radius: 5px;
 }
 
